@@ -1,4 +1,4 @@
-#MERGE SORTED ARRAY
+#P1- MERGE SORTED ARRAY
 class Solution(object):
     def merge(self, nums1, m, nums2, n):
         i,j,k=m-1,n-1,m+n-1
@@ -14,3 +14,12 @@ class Solution(object):
             nums1[k]=nums2[j]
             j-=1
             k-=1
+
+
+#P2- REMOVE ELEMENT
+class Solution(object):
+    def removeElement(self, nums, val):
+        while val in nums:
+            nums.remove(val)
+        return len(nums)
+        
