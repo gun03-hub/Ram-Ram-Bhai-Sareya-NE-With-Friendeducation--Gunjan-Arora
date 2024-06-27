@@ -10,6 +10,7 @@ def removeDuplicates(nums):
 
 # Test the function
 nums = [1, 1, 2]
+print("The original array is:", nums)
 length = removeDuplicates(nums)
 print("Length without duplicates:", length)
 print("Array without duplicates:", nums[:length])
