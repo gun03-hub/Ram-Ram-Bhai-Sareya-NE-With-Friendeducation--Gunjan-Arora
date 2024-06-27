@@ -1,3 +1,20 @@
+#P1- Remove Duplicates from Sorted Array
+def removeDuplicates(nums):
+    i = 0
+    for j in range(1, len(nums)):
+        if nums[j] != nums[i]:
+            i += 1
+            nums[i] = nums[j]
+
+    return i + 1
+
+# Test the function
+nums = [1, 1, 2]
+length = removeDuplicates(nums)
+print("Length without duplicates:", length)
+print("Array without duplicates:", nums[:length])
+
+#P2- Majority Elements
 class Solution(object):
     def majorityElement(self, nums):
         count = 0
